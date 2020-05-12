@@ -1,5 +1,4 @@
-/* RESET */
-body{
+*{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,6 +12,7 @@ body{
 
 /* GENERAL RULES */
 body {
+  color: black;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -34,72 +34,46 @@ body li {
   float: left;
 }
 
-
-
 /* END OF GENERAL RULES */
+
 
 /******************* MAIN SECTION ****************/
 
-main{
+
+
+/* SIDEBAR */
+.sidebar{
+  background-color: salmon;
   height: calc(100vh - 110px);
-  background-color: white;
-}
-
-main .main_wrapper{
-  background-color: red;
-  height: 100%;
-  width: calc(100% - 300px);
-  float: right;
-
-}
-
-
-/* LATERAL NAVIGATION */
-nav{
-  height: 100%;
   width: 300px;
-  background-color: black;
-}
-/* END OF LATERAL NAVIGATION */
+  overflow: auto;
 
-/* TOP MAIN - UPGRADE */
-.top_main{
-  height: 100px;
-  background: blue;
 }
 
-/* TOP MAIN - UPGRADE */
+/* END OF SIDEBAR */
 
-/* MENU */
-.menu{
+.upgrade{
   height: 100px;
+  background-color: violet;
+
+}
+
+.right_side{
+  height:calc(100vh - 110px);
+  width: calc(100% - 300px);
+}
+
+.content{
+  height: calc(100vh - 210px);
   background-color: yellow;
+  overflow: auto;
+
 }
-/* MENU */
-
-/* MAIN CONTENT */
-.main_content{
-  width: 100%;
-  background-color: purple;
-}
-.main_wrapper{
-  overflow: scroll;
-}
-
-.main_content{
-  z-index: -1;
-}
-/* END OF MAIN CONTENT */
-
-
-
 
 /******************* END OF MAIN SECTION *************/
 
-
 /******************** FOOTER SECTION **************/
 footer{
-  background-color: grey;
   height: 110px;
-  z-index: 10;
+  background-color: cyan;
 }

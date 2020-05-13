@@ -52,12 +52,14 @@ body li {
 
 
 .sidebar{
+
   background-color: #000000;
   height: calc(100vh - 110px);
   width: 300px;
   overflow: auto;
 }
 .sidebar_container >*{
+  min-height: 50px;
   margin-bottom: 20px;
 }
 
@@ -74,24 +76,39 @@ body li {
   vertical-align:middle;
 }
 
+.menu >*{
+  min-height: 50px;
+  overflow: auto;
+}
 .menu ul li{
   padding: 7px 0px;
 }
 
-.menu ul li:first-child{
-  color: #ffffff;
-}
 
 /* Playlist */
+.playlist{
+  /* min-height: 50px;
+  flex-grow: 1; */
+  overflow-y: auto;
+}
+
+.playlist h3{
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
 
 .playlist_item{
-  overflow-y: auto;
-  height: 200px;
+  flex-shrink: 0;
+  min-height: 50px;
+  overflow: auto;
+
 }
 
-.playlist ul li:first-child{
-  text-transform: uppercase;
+.playlist_item li{
+  padding: 8px 0px;
 }
+
 
 .plus_btn{
   display: inline-block;
@@ -102,21 +119,20 @@ body li {
   width: 50px;
   height: 50px;
   background-color: #a3a3a3;
+  margin-right: 10px;
 }
 
-.crea {
-  display: inline-block;
-}
 
 .plus{
-  vertical-align: middle;
+  margin: 10px 0;
   line-height: 50px;
 }
 
 /* Bottom Sidebar */
-.bottom_sidebar{
-  margin-top: 110px;
-}
+/* .bottom_sidebar{
+  flex-grow: 0;
+  /* margin-top: 110px; */
+} */
 
 .bottom_sidebar ul li{
   padding-bottom: 8px;
@@ -241,7 +257,7 @@ footer{
 }
 .left_player img{
   width: 60px;
-  vertical-align: middle;
+  vertical-align:bottom;
   padding: 0 5px;
 }
 
@@ -265,9 +281,7 @@ footer{
 /* End of LEFT PLAYER */
 
 /* CENTRAL PLAYER */
-/* .player_btn{
-  padding: 15px 0px;
-} */
+
 .central_player{
   text-align: center;
 }
@@ -283,34 +297,52 @@ footer{
 
 }
 
-/* .bottom ul li{
-  display: inline;
-} */
-
+/* Timeline bars */
 .bottom .time .start::after,
-.fa-volume-up::after{
+.fa-volume-up::after,
+.end::before,
+.li:before{
   display: inline-block;
   content: "";
   height: 5px;
-  width: 500px;
-  margin: 0px 30px;
+  width: 100px;
+  margin: 0px 0px;
   background-color: #ffffff;
   border-radius: 5px;
   vertical-align: middle;
 
 }
 
-/* End of LEFT PLAYER */
+.end::before{
+  background-color: #5a5a5a;
+  width: 300px;
+  margin-right: 10px;
+}
+.bottom .time .start::after{
+  margin-left: 10px;
+  width: 150;
+  margin-right: -5px;
+}
+
+/* End of CENTRAL PLAYER*/
 
 /* RIGHT PLAYER */
 .right_player ul li{
   padding: 0 10px;
 }
 
+/* Volume Bar */
 .fa-volume-up::after{
-  width: 150px;
+  width: 50px;
   margin-left: 20px;
-  margin-right: 5px;
+  margin-right: 0px;
 
 }
-/* End of LEFT PLAYER */
+
+.li:before{
+  background-color: #5a5a5a;;
+  width: 150px;
+  margin-left: -30px;
+  margin-bottom: 2px;
+}
+/* End of RIGHT */

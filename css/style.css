@@ -65,21 +65,27 @@ body li {
   width: 100%;
 }
 
-/* Navigation */
+/* Menu */
 .sidebar ul li img{
   width: 30px;
   padding-right: 5px;
   vertical-align:middle;
 }
 
-nav ul li{
+.menu ul li{
   padding: 7px 0px;
 }
 
-nav ul li:first-child{
+.menu ul li:first-child{
   color: #ffffff;
 }
 
+/* Playlist */
+
+.playlist_item{
+  overflow-y: auto;
+  height: 200px;
+}
 
 .playlist ul li:first-child{
   text-transform: uppercase;
@@ -124,24 +130,58 @@ nav ul li:first-child{
 /* END OF SIDEBAR */
 
 /* RIGHT SIDE */
-
-/* TOP MAIN - UPGRADE */
-.upgrade{
-  height: 100px;
-  background-color: violet;
-
-}
-
 .right_side{
   height:calc(100vh - 110px);
   width: calc(100% - 300px);
 }
 
-.content{
+/* TOP MAIN - UPGRADE */
+.upgrade{
+  height: 100px;
+  background-color: #080b12;
+  line-height: 100px;
+}
+
+.btn_upgrade{
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 20px;
+  position: fixed;
+  top: 3%;
+  right: 0%;
+}
+
+
+
+.main_content{
   height: calc(100vh - 210px);
-  background-color: yellow;
+  background-color: #141922;
   overflow: auto;
 
+}
+
+/* MAIN CONTENT */
+/* Navigation */
+nav{
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+nav ul li{
+  padding: 20px 10px;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+/* Content */
+.main_content > h2{
+  font-size: 70px;
 }
 
 /******************* END OF MAIN SECTION *************/
@@ -149,5 +189,93 @@ nav ul li:first-child{
 /******************** FOOTER SECTION **************/
 footer{
   height: 110px;
-  background-color: cyan;
+  background-color: #282828;
+  color: #ffffff;
 }
+
+.footer_wrapper{
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* LEFT PLAYER */
+.left_player{
+  color: #7b7b7b;
+}
+.left_player img{
+  width: 60px;
+  vertical-align: middle;
+  padding: 0 5px;
+}
+
+.left_player ul li, .right_player ul li, .bottom ul li{
+  display: inline-block;
+}
+
+.song{
+  padding-right: 30px;
+}
+
+.song p:first-of-type{
+  color: #ffffff;
+}
+
+.fa-heart{
+  padding-right: 10px;
+}
+/* End of LEFT PLAYER */
+
+/* CENTRAL PLAYER */
+/* .player_btn{
+  padding: 15px 0px;
+} */
+.central_player{
+  text-align: center;
+}
+
+.central_player >*{
+  padding: 10px 0;
+}
+
+.central_player .top ul li{
+  padding: 0 15px;
+  font-size: 25px;
+  display: inline-block;
+
+}
+
+/* .bottom ul li{
+  display: inline;
+} */
+
+.bottom .time .start::after,
+.fa-volume-up::after{
+  display: inline-block;
+  content: "";
+  height: 5px;
+  width: 500px;
+  margin: 0px 30px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  vertical-align: middle;
+
+}
+
+/* End of LEFT PLAYER */
+
+/* RIGHT PLAYER */
+.right_player ul li{
+  padding: 0 10px;
+}
+
+.fa-volume-up::after{
+  width: 150px;
+  margin-left: 20px;
+  margin-right: 5px;
+
+}
+/* End of LEFT PLAYER */

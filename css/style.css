@@ -44,12 +44,29 @@ body li {
   border-radius: 50%;
 }
 
-/* Scaling Button Upgrade*/
+/* Scaling Button Upgrade and Play button*/
 .btn_upgrade:hover{
   transform: scale(1.3, 1.3);
 }
 
+
+.fa-play-circle{
+  transition-duration: 0.2s;
+  transition-timing-function: step-end;
+}
+
+.fa-play-circle:hover{
+  transform: scale(1.2, 1.2);
+}
+
 /* Links on hover */
+.sidebar a,
+nav ul a,
+.left_player ul a{
+  transition: 0.4s;
+  transition-delay:0.02s;
+}
+
 .sidebar a:hover,
 nav ul a:hover,
 .left_player ul a:hover{
@@ -57,24 +74,54 @@ nav ul a:hover,
   font-weight: 900;
 }
 
+/* Navigation highlight */
+nav ul li {
+  position: relative;
+}
+
+nav ul li a::after{
+  content: "";
+  background-color: #b0fa30;
+  bottom: 13%;
+  position: absolute;
+  left: 38%;
+  height: 4px;
+  width: 25%;
+  border-radius: 8px;
+  display: none;
+}
+nav ul li:first-child a::after{
+  display: block;
+}
+
+nav ul li:hover a::after{
+  display: block;
+}
+
+
 
 
 /* Layover */
-.personal_music .layover{
+.personal_music .album_cover_container .layover{
   width: 100%;
   height: 100%;
-  background-color: red;
-  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: none;
 }
 
+
 .personal_music .album_cover_container{
-  padding: 0;
+  padding: 10px;
   position: relative;
 }
+
 .personal_music .album_cover_container img{
   width: 100%;
   height: 100%;
-
 }
 
 /* Play Button */
@@ -85,8 +132,10 @@ nav ul a:hover,
   top: 50%;
   left: 50%;
   transform: translate(-50% , -50%);
-  /* display: none; */
+  z-index: 1;
+  display: none;
 }
+.personal_music .album_cover_container:hover .layover,
 .album_cover_container:hover .fa-play-circle{
   display: block;
 }
@@ -429,6 +478,12 @@ footer{
 .left_player{
   color: #7b7b7b;
 }
+.folder_heart{
+  width: 5px;
+  height: 40px;
+  display: inline-block;
+}
+
 .left_player img{
   width: 60px;
   vertical-align:bottom;
@@ -470,6 +525,11 @@ footer{
   display: inline-block;
 
 }
+
+.player_btn .fa-play-circle{
+  font-size: 40px;
+}
+
 
 /* Timeline bars */
 .bottom .time .start::after,
@@ -581,7 +641,6 @@ footer{
   }
 
   .end::before{
-
     width: 100px;
   }
 

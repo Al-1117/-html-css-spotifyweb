@@ -38,6 +38,67 @@ body li {
 /* END OF GENERAL RULES */
 
 
+/* GENERAL EFFECTS  AND ANIMATIONS*/
+/* Rounded cover */
+.rounded_cover{
+  border-radius: 50%;
+}
+
+/* Scaling Button Upgrade*/
+.btn_upgrade:hover{
+  transform: scale(1.3, 1.3);
+}
+
+/* Links on hover */
+.sidebar a:hover,
+nav ul a:hover,
+.left_player ul a:hover{
+  color: #ffffff;
+  font-weight: 900;
+}
+
+
+
+/* Layover */
+.personal_music .layover{
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  z-index: 1;
+}
+
+.personal_music .album_cover_container{
+  padding: 0;
+  position: relative;
+}
+.personal_music .album_cover_container img{
+  width: 100%;
+  height: 100%;
+
+}
+
+/* Play Button */
+.album_cover_container .fa-play-circle{
+  font-size: 4.5rem;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  /* display: none; */
+}
+.album_cover_container:hover .fa-play-circle{
+  display: block;
+}
+
+
+
+/*GENERAL EFFECTS AND ANIMATIONS*/
+
+
+
+/* END OF EFFECTS */
+
 /******************* MAIN SECTION ****************/
 
 
@@ -81,11 +142,20 @@ body li {
   overflow: auto;
 }
 .menu ul li{
-  padding: 7px 0px;
+  padding: 7px 20px;
+}
+.main_menu li:first-child{
+  border-left: 2px solid #b0fa30;
+  /* padding-left: 10px; */
 }
 
 
 /* Playlist */
+
+.playlist >*{
+  padding: 0 20px
+}
+
 .playlist{
   /* min-height: 50px;
   flex-grow: 1; */
@@ -173,6 +243,8 @@ body li {
   position: fixed;
   top: 3%;
   right: 0%;
+  transition-duration: 0.2s;
+  transition-timing-function:step-start;
 }
 
 
@@ -197,6 +269,13 @@ nav ul li{
   text-transform: uppercase;
   display: inline-block;
 }
+
+/* nav ul li:first-child a{
+  border-bottom: 2px solid #b0fa30;
+  padding-bottom: 5px;
+
+} */
+
 
 /* Personal Music */
 .music_albums .title{
@@ -231,6 +310,8 @@ nav ul li{
   font-size: 20px;
 
 }
+
+
 
 
 /******************* END OF MAIN SECTION *************/

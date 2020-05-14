@@ -20,6 +20,10 @@
           <div class="logo">
             <img src="img/logo.svg" alt="Spotify Logo">
           </div>
+          <div class="small_logo">
+            <img src="img/logo-small.svg" alt="small_logo">
+
+          </div>
           <!-- MENU -->
           <div class="menu">
             <!-- Main menu -->
@@ -88,7 +92,7 @@
             <div class="title">
               <h2>Recently played</h2>
             </div>
-            <div class="music_albums_container clearfix">
+            <div class="music_albums_container clearfix" id="recently">
               <div class="personal_music float">
                 <div class="album_cover_container">
                   <img src="img/metal_lifting.jpg" alt="metal">
@@ -180,8 +184,10 @@
               <p>Sinister</p>
               <p>Brano Nome</p>
             </div></li>
-            <li><a href="#"><i class="far fa-heart"></i></a></li>
-            <li><a href="#"><i class="far fa-folder"></i></a></li>
+            <div class="folder_heart">
+              <li><a href="#"><i class="far fa-heart"></i></a></li>
+              <li><a href="#"><i class="far fa-folder"></i></a></li>
+            </div>
           </ul>
         </div>
 
@@ -210,7 +216,7 @@
             <li><i class="fas fa-sliders-h"></i></li>
             <li><i class="fas fa-desktop"></i></li>
             <li><i class="fas fa-volume-up"></i></li>
-            <li class="li"></li>
+            <li class="bar"></li>
           </ul>
         </div>
       </div>

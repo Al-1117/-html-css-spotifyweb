@@ -29,7 +29,7 @@ body li {
   clear: both;
 }
 
-.float {
+.float{
   float: left;
 }
 
@@ -46,7 +46,6 @@ body li {
 .btn_upgrade:hover{
   transform: scale(1.3, 1.3);
 }
-
 
 .fa-play-circle{
   transition-duration: 0.2s;
@@ -96,7 +95,6 @@ nav ul li:hover a::after{
   display: block;
 }
 
-
 /* Layover */
 .personal_music .album_cover_container .layover{
   width: 100%;
@@ -108,7 +106,6 @@ nav ul li:hover a::after{
   background-color: rgba(0,0,0,0.5);
   display: none;
 }
-
 
 .personal_music .album_cover_container{
   padding: 10px;
@@ -173,8 +170,7 @@ nav ul li:hover a::after{
   background-color: #b0fa30;
 }
 
-
-/* MEDIA QUERIES */
+/* Media Queries */
 @media all and (min-width: 991px){
 
   .volume .indicator{
@@ -185,13 +181,10 @@ nav ul li:hover a::after{
 
 }
 
-/*GENERAL EFFECTS AND ANIMATIONS*/
-
+/* END OF GENERAL EFFECTS AND ANIMATIONS*/
 
 
 /******************* MAIN SECTION ****************/
-
-
 
 /* SIDEBAR */
 .sidebar_container{
@@ -201,9 +194,7 @@ nav ul li:hover a::after{
   flex-direction: column;
 }
 
-
 .sidebar{
-
   background-color: #000000;
   height: calc(100vh - 110px);
   width: 300px;
@@ -212,9 +203,6 @@ nav ul li:hover a::after{
 .sidebar_container >*{
   margin-bottom: 20px;
 }
-
-
-
 
 /* Logo */
 .logo img{
@@ -242,9 +230,7 @@ nav ul li:hover a::after{
 .main_menu li:first-child{
   border-left: 2px solid #b0fa30;
   color: #ffffff;
-  /* padding-left: 10px; */
 }
-
 
 /* Playlist */
 
@@ -253,8 +239,6 @@ nav ul li:hover a::after{
 }
 
 .playlist{
-  /* min-height: 50px;
-  flex-grow: 1; */
   overflow-y: auto;
 }
 
@@ -274,7 +258,6 @@ nav ul li:hover a::after{
   padding: 8px 0px;
 }
 
-
 .plus_btn{
   display: inline-block;
   text-align: center;
@@ -287,15 +270,13 @@ nav ul li:hover a::after{
   margin-right: 10px;
 }
 
-
 .plus{
   margin: 10px 0;
   line-height: 50px;
 }
 
+
 /* Bottom Sidebar */
-
-
 
 .bottom_sidebar{
   margin-top: 100px;
@@ -369,8 +350,8 @@ nav ul li:hover a::after{
 }
 /* END OF MEDIA QUERIES */
 
-
 /* END OF SIDEBAR */
+
 
 /* RIGHT SIDE */
 .right_side{
@@ -378,7 +359,7 @@ nav ul li:hover a::after{
   width: calc(100% - 300px);
 }
 
-/* TOP MAIN - UPGRADE */
+/* Top Main - Upgrade */
 .upgrade{
   height: 100px;
   background-color: #080b12;
@@ -402,15 +383,14 @@ nav ul li:hover a::after{
   transition-timing-function:step-start;
 }
 
-
 /* MAIN CONTENT */
 .main_content{
   height: calc(100vh - 210px);
   background-color: #141922;
   overflow: auto;
   padding-left: 30px;
-
 }
+
 /* Navigation */
 nav{
   text-align: center;
@@ -422,7 +402,6 @@ nav ul li{
   text-transform: uppercase;
   display: inline-block;
 }
-
 
 /* Personal Music */
 .music_albums .title{
@@ -452,11 +431,11 @@ nav ul li{
   padding-bottom: 15px;
 }
 
-
 .personal_music h4{
   font-size: 20px;
-
 }
+
+/* END OF MAIN CONTENT */
 
 /* MEDIA QUERIES */
 /* MD */
@@ -487,7 +466,6 @@ nav ul li{
     text-align: center;
   }
 
-
 }
 
 /* XS */
@@ -507,10 +485,8 @@ nav ul li{
 }
 /* END OF MEDIA QUERIES */
 
-
-
-
 /******************* END OF MAIN SECTION *************/
+
 
 /******************** FOOTER SECTION **************/
 footer{
@@ -706,7 +682,6 @@ footer{
   .player_btn .fa-play-circle{
     font-size: 25px;
   }
-
 
   /* Right Player */
 

@@ -1,3 +1,5 @@
+
+/* RESET */
 *{
   margin: 0;
   padding: 0;
@@ -5,10 +7,6 @@
 }
 /* END OF RESET */
 
-/* Debug */
-
-
-/* END OF Debug */
 
 /* GENERAL RULES */
 body {
@@ -99,8 +97,6 @@ nav ul li:hover a::after{
 }
 
 
-
-
 /* Layover */
 .personal_music .album_cover_container .layover{
   width: 100%;
@@ -178,11 +174,20 @@ nav ul li:hover a::after{
 }
 
 
+/* MEDIA QUERIES */
+@media all and (min-width: 991px){
+
+  .volume .indicator{
+    left: 60%;
+    top: 5%;
+    display: none;
+  }
+
+}
+
 /*GENERAL EFFECTS AND ANIMATIONS*/
 
 
-
-/* END OF EFFECTS */
 
 /******************* MAIN SECTION ****************/
 
@@ -601,9 +606,10 @@ footer{
   width: 300px;
   margin-right: 10px;
 }
+
 .bottom .time .start::after{
   margin-left: 10px;
-  width: 150;
+  width: 110px;
   margin-right: -5px;
 }
 

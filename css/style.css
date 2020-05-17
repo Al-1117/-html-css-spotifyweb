@@ -131,7 +131,7 @@ nav ul li:hover a::after{
 }
 
 .past .album_cover_container{
-  padding: 0 15px;
+  margin: 0 15px;
 }
 
 /* Play Button */

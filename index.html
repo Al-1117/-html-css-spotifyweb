@@ -10,6 +10,11 @@
   </head>
 
   <body>
+
+    <script type="text/javascript">
+      getElementById("past").innerHTML="Back To Past edited by JS!";
+    </script>
+
     <main class="clearfix">
 
       <!-- SIDEBAR -->
@@ -90,7 +95,7 @@
           <!-- Personal Music -->
           <div class="music_albums">
             <div class="title">
-              <h2>Recently played</h2>
+              <h2 id="played">Recently played</h2>
             </div>
             <div class="music_albums_container clearfix" id="recently">
               <div class="personal_music float">
@@ -195,7 +200,7 @@
             <!-- Popular Artists -->
             <div class="popular">
               <div class="title">
-                <h2>Artisti più popolari</h2>
+                <h2 id="popular">Artisti più popolari</h2>
                 <p>Più ascolti, più accurati saranno i suggerimenti.</p>
               </div>
               <div class="music_albums_container clearfix">
@@ -356,7 +361,7 @@
             <!-- Back to Past -->
             <div class="past">
               <div class="title">
-                <h2>Back to Past</h2>
+                <h2 id="past">Back to Past</h2>
                 <p>I tuoi classici preferiti, ancora al top.</p>
               </div>
               <div class="music_albums_container clearfix">
@@ -493,6 +498,13 @@
     </footer>
 
     <!-- END OF FOOTER SECTION -->
+
+    <!-- SCRIPT -->
+    <script type="text/javascript" src="script/script.js">
+
+    </script>
+
+    <!-- SCRIPT -->
 
   </body>
 </html>
